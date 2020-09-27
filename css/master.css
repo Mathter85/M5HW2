@@ -39,18 +39,63 @@ html, body {
     position: relative;
     overflow-y: hidden;
     padding-top: 20px;
+    margin-bottom: 20px;
   }
     .header-menu{
       position: relative;
       float: left;
+      display: none;
+    }
+    #header-menu-img{
+      height: 26px;
+      width: 26px;
+      margin-top: 7px;
+      margin-right: 21px;
     }
     .header-logo{
       position: relative;
       float: left;
     }
+      #logo{
+        height: 40px;
+        width: 40px;
+        float: left;
+        position: relative;
+        margin-right: 8px;
+      }
+      .header-logo-text{
+        position: relative;
+        float: left;
+        width: 80px;
+        color: black;
+        padding-top: 2px;
+      }
+    .header-menu-logo-search{
+      position: relative;
+      /* overflow-y: hidden; */
+    }
+
+    .header-menu-search{
+      position: relative;
+      float: left;
+      display: none;
+    }
+    #header-menu-search-img{
+      height: 30px;
+      width: 30px;
+      margin-top: 5px;
+
+    }
+
     .header-right-block{
       position: relative;
       float: right;
+    }
+    .header-block-info{
+      background-color: white;
+      height: 30px;
+      padding-top: 20px;
+      display: none;
     }
     .header-rihgt-block-info{
       position: relative;
@@ -226,7 +271,7 @@ main{
             color: #448ccb;
             border-radius: 50px;
             border-color: #448ccb;
-            text-size:10px;
+            font-size:10px;
           }
       #column-center{
           width: 420px;
@@ -543,13 +588,46 @@ main{
     margin-top: 15px;
   }
 
-@media (max-width:520px) {
+@media (max-width:590px){
+    .header-right-block{
+      display: none;
+    }
+    .header-block-info{
+      display: block;
+    }
+  }
+@media (max-width:970px){
+  #nav_panel{
+    display: none;
+  }
+  #menu-container{
+    height: auto;
+  }
+  .header-menu-search{
+    display: block;
+  }
+  .header-form{
+    display: none;
+  }
+  .header-menu{
+      display: block;
+  }
+  .header-logo-text{
+      width: 156px;
+      padding-top: 12px;
+      margin-right: 28px;
+  }
+}
+
+
+
+
+@media (max-width:520px){
   #datetime{
     display: none;
   }
   .black-bar-text{
     display: inline-block;
-
   }
 }
 
@@ -557,17 +635,12 @@ main{
     #black-bar{
       font-size: 14px;
     }
+
 }
 @media (max-width:340px) {
-
   .black-bar-text{
     width: 300px;
     font-size: 13px;
     padding-left: 10px;
-
-  }
-  .fixed-container{
-    /* padding-left: 0; */
-    /* padding-right: 0; */
   }
 }
