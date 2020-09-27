@@ -22,20 +22,43 @@
          </div>
          <div id="header">
            <div class="fixed-container"> <!-- Строка время доп информации-->
-             <div class="header-menu"></div>
-             <div class="header-logo"><img id="logo" src="img/logo.png" alt="Логотип новостного агенства"></div>
+             <div class="header-menu-logo-search">
+               <div class="header-menu">
+                 <img id="header-menu-img" src="img/menu-icon.png" alt=Меню>
+               </div>
+               <a href="#" id="header-logo-link">
+                 <div class="header-logo">
+                    <img id="logo" src="img/icon-globus-blue.png" alt="Глобус">
+                    <div class="header-logo-text">Новостное агентство</div>
+                  </div>
+                </a>
+              <div class="header-menu-search">
+                 <img id="header-menu-search-img" src="img/lupa-icon.png" alt=Меню>
+               </div>
+             </div>
              <div class="header-right-block">
                <div class="header-rihgt-block-info">
                  <div class="header-date">19 июня, вторник</div>
                  <div class="header-time">10:48</div>
                  <div class="header-weather">+22 &deg;C</div>
-              </div>
+               </div>
                <form class="header-form" action="index.html" method="post">
                      <input id="header-search" type="text" name="Search" placeholder="Поиск по сайту" value="">
                </form>
-            </div>
+             </div>
+           </div>
          </div>
-       </div>
+
+         <div class="block-info">
+           <div class="fixed-container">
+             <div class="header-block-info">
+               <div class="header-date">19 июня, вторник</div>
+               <div class="header-time">10:48</div>
+               <div class="header-weather">+22 &deg;C</div>
+             </div>
+           </div>
+         </div>
+
           <div id="menu-container">
             <div class="fixed-container">
                <nav id="nav_panel">
@@ -331,7 +354,7 @@
                 </div>
             </div>
             <div class="footer-news-agency">
-                <img id="" src="img/icon-newsagency.png" alt="Логотип новостного агенства">
+                <img id="icon-newsagency" src="img/icon-newsagency.png" alt="Логотип новостного агенства">
                 <a href="#">Об агенстве</a>
                 <a href="#">Контакты</a>
                 <a href="#">Опубликовать новость</a>
